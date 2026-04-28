@@ -16,6 +16,79 @@
   backdrop-filter: blur(12px);
 }
 
+.cardWide {
+  width: min(980px, 100%);
+}
+
+.brandRow {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brandActions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btnSecondary {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--text);
+}
+
+.section {
+  margin-top: 14px;
+}
+
+.sectionTitle {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.formGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.formSpan {
+  grid-column: 1 / -1;
+}
+
+.tableWrap {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.table thead th {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .brand {
   display: flex;
   gap: 14px;
